@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.container-keys {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.key {
+  border: 3px solid blue;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease;
+  padding: 5px;
+}
+
+.playing {
+  background-color: rgba(241, 64, 16, 0.3);
+  transform: translateY(-6px);
+}
+
+.key kbd {
+  font-size: 22px;
+  color: yellow;
+}
+
+.key span {
+  color: red;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Variable</title>
+  </head>
+  <body>
+    <h1>Shadow generator CSS with JS</h1>
+
+    <div class="container">
+      <div class="form-control">
+        <div class="control">
+          <label for="spacingX">
+            <span>Horizontal Shadow Length</span>
+            <div class="value xvalue">0</div>
+          </label>
+          <input
+            value="5"
+            type="range"
+            name="spacingX"
+            data-format="px"
+            min="-100"
+            max="100"
+            id="xspacing"
+          />
+        </div>
+
+        <div class="control">
+          <label for="spacingY">
+            <span>Vertical Shadow Length </span>
+            <div class="value yvalue">0</div></label
+          >
+          <input
+            value="5"
+            type="range"
+            name="spacingY"
+            data-format="px"
+            min="-100"
+            max="100"
+            id="yvalue"
+          />
+        </div>
+
+        <div class="control">
+          <label for="blur"
+            ><span>Blur Rasius</span>
+            <div class="value blurValue"></div
+          ></label>
+          <input
+            value="0"
+            type="range"
+            name="blur"
+            data-format="px"
+            min="10px"
+            max="200"
+            id="blurValue"
+          />
+        </div>
+
+        <div class="control">
+          <label for="spread">
+            <span>Spread Radius</span>
+            <div class="value spreedValue"></div>
+          </label>
+          <input
+            value="0"
+            type="range"
+            name="spread"
+            data-format="px"
+            min="0"
+            max="100"
+            id="spreedValue"
+          />
+        </div>
+
+        <div class="control">
+          <label for="color"
+            ><span>Color</span>
+            <div class="value colorValue"></div
+          ></label>
+          <input value="5" type="color" name="Color" id="colorValue" />
+        </div>
+
+        <div class="control">
+          <label for="" opacity
+            ><span>Shadow Color Opacity</span>
+            <div class="value opacityValue"></div
+          ></label>
+          <input
+            value=".3"
+            type="range"
+            name="opacity"
+            data-format="px"
+            step="0.01"
+            min="0"
+            max="1"
+            id="opacityValue"
+          />
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box"></div>
+        <div class="result">
+          <div class="box-result">
+            <span>Text shadow :</span>
+            <span>2px 2px 2px 2px #1e1e1e</span>
+            <div class="copy">Copy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

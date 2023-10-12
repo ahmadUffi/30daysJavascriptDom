@@ -1,0 +1,134 @@
+:root {
+  --Xspacing: 0px;
+  --Yspacing: 0px;
+  --blur: 0px;
+  --spreed: 0px;
+  --color: rgba(0, 0, 0, 1);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+h1 {
+  margin-bottom: 60px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.container .form-control {
+  flex: 2;
+  height: 500px;
+}
+
+.container .form-control .control {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container .form-control .control label {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(117, 120, 112);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .form-control .control label .value {
+  width: 40px;
+  height: 25px;
+  border: 2px solid #1e1e1e;
+  display: grid;
+  place-items: center;
+}
+
+.container .form-control .control:nth-child(5) label .value {
+  width: 70px;
+  border: 2px solid #1e1e1e;
+}
+
+/* input */
+
+.container .form-control .control input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.container
+  .form-control
+  .control
+  input[type="range"]::-webkit-slider-runnable-track {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: white;
+  border: 1px solid rgb(128, 127, 127);
+  height: 10px;
+}
+
+.container .form-control .control input[type="range"]::-moz-range-track {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  border: 1px solid rgb(128, 127, 127);
+  height: 10px;
+}
+
+.container .form-control .control input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  margin-top: -2.5px;
+  width: 15px;
+  height: 15px;
+  background-color: #1e1e1e;
+  outline: 2px dotted grey;
+}
+
+/* box */
+
+.container .box-container {
+  flex-basis: 500px;
+  display: grid;
+  place-items: center;
+  flex: 3;
+}
+
+.container .box-container .box {
+  width: 400px;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 20px;
+  background-color: burlywood;
+  box-shadow: var(--Xspacing) var(--Yspacing) var(--blur) var(--spreed)
+    var(--color);
+}
+
+.container .box-container .result {
+  width: 400px;
+  border: 1px double rgb(117, 120, 112);
+}
+
+.container .box-container .result .box-result {
+  position: relative;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.container .box-container .result .box-result .copy {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}

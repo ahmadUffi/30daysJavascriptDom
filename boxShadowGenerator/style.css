@@ -53,7 +53,9 @@ h1 {
 }
 
 .container .form-control .control:nth-child(5) label .value {
-  width: 70px;
+  width: max-content;
+  font-size: 14px;
+  padding: 3px;
   border: 2px solid #1e1e1e;
 }
 
@@ -111,24 +113,47 @@ h1 {
     var(--color);
 }
 
-.container .box-container .result {
-  width: 400px;
-  border: 1px double rgb(117, 120, 112);
-}
-
 .container .box-container .result .box-result {
   position: relative;
-  margin-left: 30px;
-  padding: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container .box-container .result .box-result .box-shadow {
+  text-align: center;
 }
 
 .container .box-container .result .box-result .copy {
-  position: absolute;
-  top: 2px;
-  right: 2px;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  color: #1e1e1e;
+  background-color: blanchedalmond;
   font-weight: bold;
-  padding: 5px;
+  width: max-content;
+  padding: 4px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+/* except dekstop */
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .container .box-container {
+    flex-basis: 500px;
+    display: inline-block;
+  }
+
+  .container .box-container .box {
+    width: 250px;
+    margin: 0 auto;
+  }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Variable</title>
+    <title>Box shadow generator</title>
   </head>
   <body>
     <h1>Shadow generator CSS with JS</h1>
@@ -46,8 +46,8 @@
         <div class="control">
           <label for="blur"
             ><span>Blur Rasius</span>
-            <div class="value blurValue"></div
-          ></label>
+            <div class="value blurValue">0</div></label
+          >
           <input
             value="0"
             type="range"
@@ -62,7 +62,7 @@
         <div class="control">
           <label for="spread">
             <span>Spread Radius</span>
-            <div class="value spreedValue"></div>
+            <div class="value spreedValue">0</div>
           </label>
           <input
             value="0"
@@ -78,18 +78,23 @@
         <div class="control">
           <label for="color"
             ><span>Color</span>
-            <div class="value colorValue"></div
-          ></label>
-          <input value="5" type="color" name="Color" id="colorValue" />
+            <div class="value colorValue">rgba(255,255,255,1)</div></label
+          >
+          <input
+            value="rgba(255,255,255,1)"
+            type="color"
+            name="Color"
+            id="colorValue"
+          />
         </div>
 
         <div class="control">
           <label for="" opacity
             ><span>Shadow Color Opacity</span>
-            <div class="value opacityValue"></div
-          ></label>
+            <div class="value opacityValue">1</div></label
+          >
           <input
-            value=".3"
+            value="1"
             type="range"
             name="opacity"
             data-format="px"
@@ -106,8 +111,8 @@
         <div class="result">
           <div class="box-result">
             <span>Text shadow :</span>
-            <span>2px 2px 2px 2px #1e1e1e</span>
-            <div class="copy">Copy</div>
+            <span class="box-shadow">box-shadow : 0 0 0 0 rgba(0,0,0,1);</span>
+            <button class="copy">Copy</button>
           </div>
         </div>
       </div>
